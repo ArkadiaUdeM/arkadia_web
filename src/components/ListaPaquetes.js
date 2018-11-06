@@ -6,29 +6,13 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import AddIcon from "@material-ui/icons/Add";
 import { Link } from "react-router-dom";
 
-const getUrl = nombre => {
-  let url = "";
-  switch (nombre) {
-    default:
-      url = `/historia/${nombre}`;
-      break;
-    case "Gestionar zona de parqueo":
-      url = "/eParking/gestionarZona";
-      break;
-    case "Ver zonas de parqueo":
-      url = "/eParking/verZonas";
-      break;
-  }
-  return url;
-};
-
 const populateHistorias = historiasDeUsuario => {
   return historiasDeUsuario.map(historia => (
     <ListItem
       button
       key={historia._id}
       component={Link}
-      to={getUrl(historia.nombre)}
+      to={historia.referencia}
     >
       <ListItemIcon>
         <AddIcon />

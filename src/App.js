@@ -36,8 +36,11 @@ class App extends React.Component {
               <div className={classes.appBarSpacer} />
               <Route path="/proyecto" component={Proyecto} exact />
               <Route path="/paquete" component={Paquete} />
-              <Route path="/eParking/gestionarZona" component={GestionarZona} />
-              <Route path="/eParking/verZonas" component={VerZonas} />
+              <Route
+                path="/eParking/gestionarZonaDeParqueo"
+                component={GestionarZona}
+              />
+              <Route path="/eParking/verZonasDeParqueo" component={VerZonas} />
             </main>
           </div>
         </Fragment>
