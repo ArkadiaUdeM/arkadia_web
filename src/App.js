@@ -8,6 +8,7 @@ import Proyecto from "./views/Proyecto";
 import Paquete from "./views/Paquete";
 import GestionarZona from "./views/eParking/GestionarZona";
 import VerZonas from "./views/eParking/VerZonas";
+import VisualizarEstaciones from "./views/EcoWheels/VisualizarEstaciones";
 
 const styles = theme => ({
   root: {
@@ -41,6 +42,10 @@ class App extends React.Component {
                 component={GestionarZona}
               />
               <Route path="/eParking/verZonasDeParqueo" component={VerZonas} />
+              <Route
+                path="/EcoWheels/visualizarEstaciones"
+                component={VisualizarEstaciones}
+              />
             </main>
           </div>
         </Fragment>
